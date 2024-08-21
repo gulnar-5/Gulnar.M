@@ -462,7 +462,8 @@ df_encoded['target'].value_counts(normalize=True)*100
 # In[277]:
 
 
-from sklearn.model_selection import train_test_splitX=df_encoded.drop('target',axis=1)
+from sklearn.model_selection import train_test_split
+X=df_encoded.drop('target',axis=1)
 y=df_encoded[['target']]
 X_train,X_test,y_train,y_test=train_test_split(X,y.values.ravel(),test_size=0.2,random_state=42,stratify=y)
 from sklearn.preprocessing import StandardScaler
