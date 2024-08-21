@@ -15,8 +15,6 @@ warnings.filterwarnings("ignore")
 # In[3]:
 
 
-pip install streamlit scikit-learn pandas numpy
-
 
 # In[6]:
 
